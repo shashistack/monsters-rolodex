@@ -1,0 +1,16 @@
+https://github.com/shashistack/monsters-rolodex.git
+git remote add origin https://github.com/shashistack/monsters-rolodex.git
+
+Steps from: https://linuxize.com/post/how-to-install-yarn-on-ubuntu-18-04/
+sudo su
+sudo apt install curl
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install yarn
+yarn --version
+
+yarn add gh-pages
+> package.json: edit...
+yarn deploy
+
